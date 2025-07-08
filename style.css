@@ -128,17 +128,17 @@ section {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Add a background color to the container if 'contain' leaves empty space
+     This background will show through the empty areas if the image doesn't fill the box */
+  /* background-color: #333; */ /* Removed this suggestion as it's not needed with object-fit: cover */
 }
 
 .project-image-container img {
   width: 100%;
   height: 180px;
-  object-fit: contain; /* CHANGED from 'cover' to 'contain' */
+  object-fit: cover; /* CHANGED from 'contain' back to 'cover' */
   display: block;
   border-radius: 8px;
-  /* Optional: Add a background color to the container if 'contain' leaves empty space
-     This background will show through the empty areas if the image doesn't fill the box */
-  background-color: #333; /* Example: a dark grey background */
 }
 
 
