@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <!-- Existing Raleway font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet" />
+  <!-- New: Inter font for logo and potentially other text -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS CSS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div id="tsparticles"></div>
+  <header>
+    <a href="#" class="logo">
+      <!-- Changed from <span>🌿</span> to Font Awesome icon -->
+      <i class="fas fa-laptop-code"></i> MyPortfolio
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="toggle">☰</div>
+    </nav>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h1>Hi, I'm <span class="highlight">Aditya K Menon</span></h1>
+    <p>I'm a <span class="typewriter"></span></p>
+    <button onclick="scrollToSection('projects')">View My Work</button>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2><br>
+    <p>I'm a passionate engineering student with strong foundational knowledge in electronics and a keen interest in web development and design. I believe I am highly skilled at applying theoretical knowledge to practical projects, with strong problem-
+    solving skills and a collaborative mindset. I am also highly adaptible to varied work environments and am always curious to learn something new.</p>
+  </section>
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2><br>
+    <div class="project-grid">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <!-- New: Project Image -->
+        <div class="project-image-container">
+          <img src="https://placehold.co/400x250/00adb5/ffffff?text=Project+1" alt="Student Result Management System Screenshot">
+        </div>
+        <h3>Student Result Management System (With Login & Admin Panel)</h3><br>
+        <p> Designed a web-based system with secure login and admin panel for managing student records
+        and results. Built with Python, MySQL, and Linux deployment, features user authentication and
+        CRUD operations.</p>
+      </div>
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+        <!-- New: Project Image -->
+        <div class="project-image-container">
+          <img src="https://placehold.co/400x250/007b7f/ffffff?text=Project+2" alt="LWC Algorithm FPGA Diagram">
+        </div>
+        <h3>LWC Algorithm on FPGA, using Verilog coding</h3> <br>
+        <p> Designed and implemented a high-speed, FPGA-based light-weight cryptographic (LWC) accelerator
+        using System Verilog coding, optimizing performance for secure IoT applications.</p>
+      </div>
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+        <!-- New: Project Image -->
+        <div class="project-image-container">
+          <img src="https://placehold.co/400x250/ff5722/ffffff?text=Project+3" alt="Employee Data Analysis Dashboard">
+        </div>
+        <h3>Data Cleaning, Preprocessing and Management of Employee Datasets</h3><br>
+        <p> Cleaned, preprocessed, structured and analyzed employee data sets to enhance consistency and
+        data organization. Focused on handling structured datasets, utilizing popular data science tools to improve data organization.</p>
+      </div>
+    </div><br><br>
+    <div class="work-experience" data-aos="fade-up">
+      <h2>Work Experience</h2><br>
+      <ul>
+        <h3><strong class="role">Student Intern</strong></h3> at <strong class="company">Centre for Development of Telematics (C-DOT), Bengaluru.</strong>
+        <br>
+        Currently working as a student intern at C-DOT Bengaluru on implementing and testing 5G NR
+        features using the OAI 5G platform, including modulation and coding schemes, RACH
+        procedures, and MIMO configurations.
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2><br>
+    <div class="contact-info-grid">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:adityaa0986@gmail.com">adityaa0986@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+918220999081">+91 82209 99081</a>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/aditya0986/" target="_blank" rel="noopener">LinkedIn Profile</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <!-- AOS JS must be loaded after its CSS and before your custom script.js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
